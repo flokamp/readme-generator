@@ -18,7 +18,18 @@ const questions = [
   {
     name: 'license',
     type: 'list',
+    message: 'How is this project licensed?',
     choices: ['BSD', 'MIT', 'GPL'],
+  },
+  {
+    name: 'installation',
+    type: 'input',
+    message: 'What are the instructions for installing?',
+  },
+  {
+    name: 'usage',
+    type: 'input',
+    message: 'Describe the usage.',
   },
 ];
 
@@ -31,7 +42,7 @@ const init = () => {
   .then(data => {
   console.log(generateMarkdown(data))
     const filename = data.name.toLowerCase() + '.md';
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
+    fs.writeFile(filename, JSON.stringify(generateMarkdown(data), null, '\t'), function(err) {
 
       if (err) {
         return console.log(err)
