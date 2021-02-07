@@ -1,5 +1,4 @@
 // Function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 const renderLicenseBadge = license => {
   if (license === 'Apache License 2.0') {
     let license = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
@@ -10,7 +9,7 @@ const renderLicenseBadge = license => {
     return license;
   }
   else if (license === 'GNU AGPLv3') {
-    let license = `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0`
+    let license = `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`
     return license;
   }
   else if (license === 'GNU GPLv3') {
@@ -36,33 +35,58 @@ const renderLicenseBadge = license => {
   
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 const generateMarkdown = data => {
   const license = data.license
 
-return `# ${data.name}
+return `${data.name}
+==========
 
 ${renderLicenseBadge(license)}
+
 ## Description
+-----------------
 ${data.description}
 
+## Table of Contents
+-----------------
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+
 ## Installation
+-----------------
 ${data.installation}
 
 ## Usage
+-----------------
 ${data.usage}
 
 ## Credits
+-----------------
 ${data.credits}
 
 ## License
+-----------------
 ${data.license}
 
 ## Contributing
+-----------------
 ${data.contribution}
 
 ## Tests
+-----------------
 ${data.tests}
+
+## Questions
+-----------------
+My GitHub: [${data.username}](https://github.com/${data.username})
+
+If you have additional questions, email me! ${data.email}
 `
 }
 

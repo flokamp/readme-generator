@@ -6,6 +6,16 @@ const generateMarkdown = require('./utils/generateMarkdown.js')
 // Array of questions for user input
 const questions = [
   {
+    name: 'username',
+    type: 'input',
+    message: 'What is your GitHub username?'
+  },
+  {
+    name: 'email',
+    type: 'input',
+    message: 'What is your email?'
+  },
+  {
     name: 'name',
     type: 'input',
     message: 'What is the title of your project?',
@@ -13,33 +23,33 @@ const questions = [
   {
     name: 'description',
     type: 'input',
-    message: 'What is a description of your project?',
+    message: 'Describe your project.',
   },
   {
     name: 'installation',
     type: 'input',
-    message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.'
+    message: 'What are the step-by-step required to install your project?'
   },
   {
     name: 'usage',
     type: 'input',
-    message: 'Provide instructions and examples for use. Include screenshots as needed.'
+    message: 'Provide instructions and examples for using your project.'
   },
   {
     name: 'credits',
     type: 'input',
-    message: 'List any collaborators with links to their GitHub profiles. If you used any third-party assets that require attribution, list the creators with links to their primary web presence. If you followed tutorials, include those links.'
+    message: 'List any collaborators, creators of third-party assets, or tutorials you followed.'
   },
   {
     name: 'license',
     type: 'list',
-    message: 'The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use https://choosealicense.com/',
-    choices: ['Apache License 2.0', 'Boost Software License 1.0', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'MIT License', 'Mozilla Public License 2.0', 'Unlicense', 'No License'],
+    message: 'Including a license lets other developers know what they can and cannot do with your project. To help you choose a license, go to https://choosealicense.',
+    choices: ['Apache License 2.0', 'Boost Software License 1.0', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'MIT License', 'Mozilla Public License 2.0', 'Unlicense'],
   },
   {
     name: 'contribution',
     type: 'input',
-    message: 'If you would like other developer to contribute, add guidelines for how to do so.'
+    message: 'What are the guidelines for how other developers can contribute to your project.'
   },
   {
     name: 'tests',
