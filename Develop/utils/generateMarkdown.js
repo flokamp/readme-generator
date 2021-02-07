@@ -18,6 +18,7 @@ const generateMarkdown = data => {
   const license = data.license
 
 return `## License
+
 ${renderLicenseBadge(license)}`
 }
 
