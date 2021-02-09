@@ -23,7 +23,7 @@ To run this application, you'll need Git and Node.js installed on your computer.
 
 ## Usage
 -----------------
-Run the app from the command line: `node index`<br> Answer the prompts<br>![Screenshot](assets/images/prompts.png)<br>Right click on the README.md and click "Open Preview" to see your generated README<br>![Screenshot](assets/images/preview.png)
+Run the app from the command line: `node index`<br> Answer the prompts<br>![Screenshot](assets/images/prompts.png)<br>Right click on the README.md and click "Open Preview" to see your generated README<br>![Screenshot](../assets/images/preview.png)
 
 ## Credits
 -----------------
