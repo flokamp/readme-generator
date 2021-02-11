@@ -30,7 +30,7 @@ To install this application, you'll need Git and Node.js installed on your compu
 
 ---
 
-To use this application: 1. Run the app from the command line: `node index`<br>2. Answer the prompts<br>![Screenshot](images/prompts.png)<br>3. Right click on the README.md and click "Open Preview" to see your generated README<br>![Screenshot](images/preview.png)
+To use this application:<br> 1. Run the app from the command line: `node index`<br>2. Answer the prompts<br>![Screenshot](images/prompts.png)<br>3. Right click on the README.md and click "Open Preview" to see your generated README<br>![Screenshot](images/preview.png)
 
 ## Credits
 
