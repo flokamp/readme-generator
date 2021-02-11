@@ -19,11 +19,11 @@ Your GitHub profile is an extremely important aspect of your public identity as 
 
 ## Installation
 -----------------
-To run this application, you'll need Git and Node.js installed on your computer. From the command line: <br>Clone this repository: `git clone git@github.com:flokamp/readme-generator.git`<br>Go to the root directory and install dependencies: `npm install`
+To run this application, you'll need Git and Node.js installed on your computer. From the command line: <br>1. Clone this repository: `git clone git@github.com:flokamp/readme-generator.git`<br>2. Go to the root directory and install dependencies: `npm install`
 
 ## Usage
 -----------------
-Run the app from the command line: `node index`<br> Answer the prompts<br>![Screenshot](Develop/assets/images/prompts.png)<br>Right click on the README.md and click "Open Preview" to see your generated README<br>![Screenshot](Develop/assets/images/preview.png)
+1. Run the app from the command line: `node index`<br> 2. Answer the prompts<br>![Screenshot](Develop/assets/images/prompts.png)<br>3. Right click on the README.md and click "Open Preview" to see your generated README<br>![Screenshot](Develop/assets/images/preview.png)
 
 ## Credits
 -----------------
